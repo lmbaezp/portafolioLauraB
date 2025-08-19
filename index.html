@@ -2,17 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura Baez Dev</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link
@@ -21,23 +13,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-    <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
-
-    <!-- Main CSS File -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
+</head>
 
-<body class="index-page">
+
+
+<body>
 
     <!-- Hero Section -->
     <section id="hero" class="hero section gradient-background d-flex align-items-center justify-content-center">
@@ -51,203 +39,276 @@
     </section>
     <!-- /Hero Section -->
 
-    <main class="main d-none">
-        <section class="container-fluid text-center p-0" style="border:2px solid blue;">
-            <div class="row">
-                <div id="menu" class="col-3 d-flex flex-column justify-content-center align-items-center"
-                    style="border:2px solid red;">
+    <div id="main-section" class="container-fluid text-center d-none">
+        <div id="row-main-section" class="row">
+            <!-- Sidebar -->
+            <div class="col-4 border-end border-black border-5 d-flex flex-column justify-content-between p-0">
+
+                <div class="row mt-5 gap-3 justify-content-center">
                     <h1>Laura Baez</h1>
                     <p>FullStack Developer</p>
-
                     <!-- Botones -->
-                    <div class="d-flex gap-3">
-                        <a href="assets/files/LauraBaez-CV.pdf" target="_blank" class="btn btn-outline-primary">Ver CV</a>
-                        <a href="assets/files/LauraBaez-CV.pdf" download class="btn btn-success">Descargar PDF</a>
+                    <a id="ver-cv" href="assets/files/LauraBaez-CV.pdf" target="_blank"
+                        class="col-5 btn text-center py-auto">Ver
+                        CV</a>
+                    <a id="descargar-cv" href="assets/files/LauraBaez-CV.pdf" download
+                        class="col-5 btn btn-success">Descargar CV</a>
+                </div>
 
+                <!-- Skills -->
+                <div id="skills" class="row gy-4 skills my-5 mx-0">
+                    <h4 class="title">Skills</h4>
+                    <div class="col-md-6">
+                        <div class="skills-content skills-animation">
+                            <div class="progress">
+                                <span class="skill"><span>HTML</span> <i class="val">80%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                        aria-valuemax="100"></div>
+                                </div>
+                            </div><!-- End Skills Item -->
+
+                            <div class="progress">
+                                <span class="skill"><span>CSS</span> <i class="val">70%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div><!-- End Skills Item -->
+
+                            <div class="progress">
+                                <span class="skill"><span>JavaScript</span> <i class="val">60%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div><!-- End Skills Item -->
+
+                            <div class="progress">
+                                <span class="skill"><span>Bootstrap</span> <i class="val">70%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div><!-- End Skills Item -->
+
+                        </div>
                     </div>
 
-
-
-                </div>
-                <div id="mainContent" class="col-9">
-                    <!-- About Section -->
-                    <section id="about" class="row about section p-0">
-                        <div class="row g-5 d-flex flex-column justify-content-center align-items-center about-me mb-5 mx-auto"
-                            data-aos="fade-up" data-aos-delay="100">
-                            <h4>About me</h4>
-                            <p>
-                                I'm a passionate Full Stack Developer with experience in building dynamic
-                                and scalable web applications.
-                                I specialize in both frontend and backend technologies, ensuring that every
-                                project combines an
-                                attractive design with solid performance.
-                                I enjoy solving problems, optimizing processes, and creating intuitive
-                                digital experiences.
-                            </p>
-                            <p>
-                                My tech stack includes HTML, Bootstrap, JavaScript, Python.
-                                I'm always exploring new tools to enhance my skills. I love working on
-                                personal projects to improve my
-                                creativity.
-                                Excellent communication skills, restless to learn constantly, passionate
-                                about teaching.
-                                And when I'm not coding, I love to go hiking.
-                            </p>
-                            <h5 style="text-align: center;">
-                                I'm always open to new challenges and opportunities to collaborate on
-                                innovative projects.
-                                Have an idea? <a href="#contact" class="about-me-link">Let's talk</a> and
-                                make it happen!
-                            </h5>
-                        </div>
-
-                        <div class="row gy-4 skills my-5 mx-auto">
-                            <h4 class="title">Skills</h4>
-                            <div class="col-md-6">
-                                <div class="skills-content skills-animation">
-                                    <div class="progress">
-                                        <span class="skill"><span>HTML</span> <i class="val">80%</i></span>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="80"
-                                                aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                    </div><!-- End Skills Item -->
-
-                                    <div class="progress">
-                                        <span class="skill"><span>CSS</span> <i class="val">70%</i></span>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div><!-- End Skills Item -->
-
-                                    <div class="progress">
-                                        <span class="skill"><span>JavaScript</span> <i class="val">60%</i></span>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="60"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div><!-- End Skills Item -->
-
-                                    <div class="progress">
-                                        <span class="skill"><span>Bootstrap</span> <i class="val">70%</i></span>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div><!-- End Skills Item -->
-
+                    <div class="col-md-6">
+                        <div class="skills-content skills-animation">
+                            <div class="progress">
+                                <span class="skill"><span>PHP</span> <i class="val">50%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
                                 </div>
-                            </div>
+                            </div><!-- End Skills Item -->
 
-                            <div class="col-md-6">
-                                <div class="skills-content skills-animation">
-                                    <div class="progress">
-                                        <span class="skill"><span>PHP</span> <i class="val">50%</i></span>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="50"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div><!-- End Skills Item -->
-
-                                    <div class="progress">
-                                        <span class="skill"><span>Laravel</span> <i class="val">40%</i></span>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="40"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div><!-- End Skills Item -->
-
-                                    <div class="progress">
-                                        <span class="skill"><span>Python</span> <i class="val">50%</i></span>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="50"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div><!-- End Skills Item -->
-
-                                    <div class="progress">
-                                        <span class="skill"><span>JavaScript</span> <i class="val">5%</i></span>
-                                        <div class="progress-bar-wrap">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="5"
-                                                aria-valuemin="0" aria-valuemax="100">
-                                            </div>
-                                        </div>
-                                    </div><!-- End Skills Item -->
-
+                            <div class="progress">
+                                <span class="skill"><span>Laravel</span> <i class="val">40%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
                                 </div>
+                            </div><!-- End Skills Item -->
 
-                            </div>
+                            <div class="progress">
+                                <span class="skill"><span>Python</span> <i class="val">50%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div><!-- End Skills Item -->
+
+                            <div class="progress">
+                                <span class="skill"><span>JavaScript</span> <i class="val">5%</i></span>
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div><!-- End Skills Item -->
+
                         </div>
-                    </section>
 
-                    <footer id="footer" class="row footer mt-5">
-
-                        <div class="container">
-                            <div class="copyright text-center ">
-                                <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong>
-                                    <span>All Rights
-                                        Reserved</span>
-                                </p>
-                            </div>
-                            <div class="social-links d-flex justify-content-center">
-                                <a href="https://x.com/"><i class="bi bi-twitter-x"></i></a>
-                                <a href="https://facebook.com"><i class="bi bi-facebook"></i></a>
-                                <a href="https://instagram.com"><i class="bi bi-instagram"></i></a>
-                                <a href="https://www.linkedin.com"><i class="bi bi-linkedin"></i></a>
-                                <a href="https://www.github.com"><i class="bi bi-github"></i></a>
-                            </div>
-                            <div class="credits">
-                                <!-- All the links in the footer should remain intact. -->
-                                <!-- You can delete the links only if you've purchased the pro version. -->
-                                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                                <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                            </div>
-                        </div>
-                    </footer>
+                    </div>
                 </div>
 
+                <!-- Footer -->
+                <footer id="footer" class="row footer mt-5 mx-0 py-2">
+                    <div class="container-fluid p-0 m-0">
+                        <div class="copyright text-center m-0 ">
+                            <p class="my-2">© <span>Copyright All Rights Reserved</span>
+                            </p>
+                        </div>
+                        <div class="social-links d-flex justify-content-center gap-2">
+                            <a class="icons-rrss" href="https://github.com/lmbaezp"><i
+                                    class="fs-2 bi bi-github"></i></a>
+                            <a class="icons-rrss" href="www.linkedin.com/in/lauram-baezp"><i
+                                    class="fs-2 bi bi-linkedin"></i></a>
+                        </div>
+                        <div class="credits">
+                            Designed by Laura Báez</a>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End footer -->
+            </div>
+            <!-- End Sidebar -->
+
+            <!-- Text -->
+            <div class="col-8">
+                <!-- About me -->
+                <div id="about"
+                    class="about p-5 row g-5 d-flex flex-column justify-content-center align-items-center about-me mb-5 mx-auto"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <h4>About me</h4>
+                    <p class="mt-3">
+                        I'm a passionate Full Stack Developer with experience in building dynamic
+                        and scalable web applications.
+                        I specialize in both frontend and backend technologies, ensuring that every
+                        project combines an
+                        attractive design with solid performance.
+                        I enjoy solving problems, optimizing processes, and creating intuitive
+                        digital experiences.
+                    </p>
+                    <p class="mt-3">
+                        My tech stack includes HTML, Bootstrap, JavaScript, Python.
+                        I'm always exploring new tools to enhance my skills. I love working on
+                        personal projects to improve my
+                        creativity.
+                        Excellent communication skills, restless to learn constantly, passionate
+                        about teaching.
+                        And when I'm not coding, I love to go hiking.
+                    </p>
+                    <h5 class="text-center mt-4">
+                        I'm always open to new challenges and opportunities to collaborate on
+                        innovative projects.
+                        Have an idea? <a href="https://wa.me/573125534565?text=Hola%20estoy%20interesado..." target="_blank" class="about-me-link">Let's talk</a> and
+                        make it happen!
+                    </h5>
+                </div>
+                <!-- End About me -->
+
+                <!-- Portafolio -->
+                <!-- Swiper -->
+                <div id="portafolio" class="container-fluid">
+                    <h4>Portfolio</h4>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" data-title="Blog Hollow Knight">
+                                <img src="assets/img/portfolio/blog_hollow_knight.png" />
+                                <div
+                                    class="slide-overlay d-flex flex-column justify-content-end align-items-center text-center">
+                                    <div class="slide-title">Blog Hollow Knight</div>
+                                    <div class="view-more-icons mb-5">
+                                        <div class="view-more-icon" onclick="viewProject('blog-hollow-knight')">
+                                            <i class="bi bi-eye fs-3 w-100"></i>
+                                        </div>
+                                        <div class="view-more-icon" onclick="viewProject('blog-hollow-knight')">
+                                            <i class="bi bi-github fs-3"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
 
-        </section><!-- /About Section -->
-    </main>
+        </div>
+    </div>
+    </div>
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper - CONFIGURACIÓN CORREGIDA -->
+    <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+            // Configuración del efecto coverflow
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
 
+            // Configuración específica del coverflow
+            coverflowEffect: {
+                rotate: 50,        // Rotación de las slides
+                stretch: 0,        // Estiramiento entre slides
+                depth: 100,        // Profundidad del efecto 3D
+                modifier: 1,       // Multiplicador del efecto
+                slideShadows: true, // Sombras en las slides
+            },
 
-    <!-- <script src="assets/vendor/php-email-form/validate.js"></script>
-    
-    
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+            // Paginación
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
 
-    <!-- Main JS File -->
+            // Configuraciones adicionales para mejor experiencia
+            loop: true,              // Loop infinito
+            autoplay: {
+                delay: 3000,         // Autoplay cada 3 segundos
+                disableOnInteraction: false,
+            },
+
+            // Configuración responsive
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script> -->
     <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
