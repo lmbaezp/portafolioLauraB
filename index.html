@@ -128,7 +128,7 @@
                             </div><!-- End Skills Item -->
 
                             <div class="progress">
-                                <span class="skill"><span>JavaScript</span> <i class="val">5%</i></span>
+                                <span class="skill"><span>Java</span> <i class="val">15%</i></span>
                                 <div class="progress-bar-wrap">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0"
                                         aria-valuemax="100">
@@ -151,7 +151,7 @@
                         <div class="social-links d-flex justify-content-center gap-2">
                             <a class="icons-rrss" href="https://github.com/lmbaezp"><i
                                     class="fs-2 bi bi-github"></i></a>
-                            <a class="icons-rrss" href="www.linkedin.com/in/lauram-baezp"><i
+                            <a class="icons-rrss" href="https://www.linkedin.com/in/lauram-baezp"><i
                                     class="fs-2 bi bi-linkedin"></i></a>
                         </div>
                         <div class="credits">
@@ -203,23 +203,35 @@
                     <h4>Portfolio</h4>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" data-title="Blog Hollow Knight">
-                                <img src="assets/img/portfolio/blog_hollow_knight.png" />
+                            <div class="swiper-slide">
+                                <img src="assets/img/portfolio/blog_hollow_knight.png"/>
                                 <div
                                     class="slide-overlay d-flex flex-column justify-content-end align-items-center text-center">
                                     <div class="slide-title">Blog Hollow Knight</div>
                                     <div class="view-more-icons mb-5">
-                                        <div class="view-more-icon" onclick="viewProject('blog-hollow-knight')">
+                                        <a href="https://pipealf.github.io/BlogHollowKnight/" class="view-more-icon" target="_blank">
                                             <i class="bi bi-eye fs-3 w-100"></i>
-                                        </div>
-                                        <div class="view-more-icon" onclick="viewProject('blog-hollow-knight')">
+                                        </a>
+                                        <a href="https://github.com/lmbaezp/blog_hollow_knight_bootstrap" class="view-more-icon" target="_blank">
                                             <i class="bi bi-github fs-3"></i>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                <img src="assets/img/portfolio/velarte.png"/>
+                                <div
+                                    class="slide-overlay d-flex flex-column justify-content-end align-items-center text-center">
+                                    <div class="slide-title">Velarte</div>
+                                    <div class="view-more-icons mb-5">
+                                        <a href="https://lmbaezp.github.io/proyecto-velarte/" class="view-more-icon" target="_blank">
+                                            <i class="bi bi-eye fs-3 w-100"></i>
+                                        </a>
+                                        <a href="https://github.com/lmbaezp/proyecto-velarte" class="view-more-icon" target="_blank">
+                                            <i class="bi bi-github fs-3"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="swiper-slide">
                                 <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
@@ -263,51 +275,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper - CONFIGURACIÓN CORREGIDA -->
-    <!-- <script>
-        var swiper = new Swiper(".mySwiper", {
-            // Configuración del efecto coverflow
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-
-            // Configuración específica del coverflow
-            coverflowEffect: {
-                rotate: 50,        // Rotación de las slides
-                stretch: 0,        // Estiramiento entre slides
-                depth: 100,        // Profundidad del efecto 3D
-                modifier: 1,       // Multiplicador del efecto
-                slideShadows: true, // Sombras en las slides
-            },
-
-            // Paginación
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-
-            // Configuraciones adicionales para mejor experiencia
-            loop: true,              // Loop infinito
-            autoplay: {
-                delay: 3000,         // Autoplay cada 3 segundos
-                disableOnInteraction: false,
-            },
-
-            // Configuración responsive
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                }
-            }
-        });
-    </script> -->
     <script src="assets/js/main.js"></script>
 </body>
 
